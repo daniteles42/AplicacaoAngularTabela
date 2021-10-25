@@ -1,0 +1,41 @@
+<!-- Utilização de um título no início da página para apresentação, utilizando classes do bootstrap para adicionar um padding no topo e centralizar o texto -->
+<h2 class="text-center pt-5"><b>Tabela de Alunos:</b></h2>
+
+<!-- Divisão de conteúdo, com classe do Bootstrap que dá um espaço com padding, responsivo para posicionamento do conteúdo -->
+<div class = "container">
+
+  <!-- Mais uma divisão, agora organizando por linha e setando os espaços de grid para a utilização das colunas responsivas do bootstrap -->
+  <div class = "row">
+
+    <!-- Div que terá o for para leitura dos elementos da tabela no arquivo.ts, foi usada na classe o col-md, pois acaba considerando basicamente o conteúdo no mobile, e deixando com bom espaço no desktop -->
+    <div class = "col-md-12 pt-5">
+
+        <!-- Classe para a Tabela, com divisórias de cores por linha -->
+        <table class="table table-striped">
+
+          <!-- Cabeçalho da Tabela com os dados que teremos -->
+          <thead>
+
+            <tr><th>Aluno</th> <th>Curso</th> <th>RU</th> <th>Data do Aniversário</th></tr>
+
+          </thead>
+          
+          <!-- Corpo da Tabela, com a leitura dos dados do outro arquivo importado -->
+          <tbody>
+          <!-- Comando *ngFor que percorre a lista -->
+          <tr *ngFor="let i of lista_aluno;">
+
+            <!-- Comando para a apresentação dos itens da lista seguindo o método para percorrer a lista anteriormente -->
+            <td>{{ i.Nome }} </td>  <td>{{ i.RU }} </td> <td>{{ i.Curso }} </td> <td>{{ i.Data_aniversario }} </td>
+
+          </tr>
+          </tbody>
+
+        </table>
+
+    </div>
+
+
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+
+/* Nos estilos, apenas adicionei ao corpo da aplicação a fonte 'Trebuchet MS' e defini uma cor de fundo para a página não parecer tão vazia */
+
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #F1F1F1;
+}
